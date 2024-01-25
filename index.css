@@ -1,0 +1,47 @@
+#space{
+    margin-top: 10px;
+    margin-left: 400px;
+    width: 700px;
+    height: 700px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+body{
+    
+    background-image: url(/images/nasa-rTZW4f02zY8-unsplash.jpg);
+}
+.rocket{
+    position: absolute;
+    bottom: 0;
+    transform: rotate(-45deg);
+    font-size: 50px;
+}
+.button{
+    float: left;
+    margin-top:-570px;
+    width: 80px;
+    height: 50px;
+    color: black;
+    background-image: linear-gradient(to right, red , yellow);
+}
+#fire{
+margin-left: 155px;
+}
+#break{
+    margin-top: -519px;
+    margin-left: 155px; 
+}
+#left{
+    margin-top: -545px;
+    margin-left:74px;
+}
+#rigth{
+    margin-left: 236px;
+    margin-top: -545px;
+}
+
+
+
+
