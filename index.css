@@ -16,7 +16,7 @@ body{
     position: absolute;
     bottom: 0;
     transform: rotate(-45deg);
-    font-size: 50px;
+    font-size: 40px;
 }
 .button{
     float: left;
