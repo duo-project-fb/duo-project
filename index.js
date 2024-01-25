@@ -22,5 +22,19 @@ $('#left').click(function() {
   rocket.css('right', (Bottom + 10) + 'px');
 });
 });
+// var arr=["⚪",
+//   "⚪",
+//   "⚪",
+//   "⚪",
+//   "⚪",
+//   "⚪",
+//   "⚪",
+//   "⚪","⚪","⚪","⚪"]
+//   var fedi=document.getElementById("space")
+// for(var i=0;i<arr.length;i++){
+//   var obstacle=document.createElement("h1")
+//   obstacle.textContent=arr[i]
+//   singleItem
+// }
 
   

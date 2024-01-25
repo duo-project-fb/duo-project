@@ -7,6 +7,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    
 }
 body{
     
@@ -41,7 +42,26 @@ margin-left: 155px;
     margin-left: 236px;
     margin-top: -545px;
 }
-
+.spot{
+    width:8px ;
+    height: 8px;
+    background-color:red;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 30px;
+    animation-name: anim ;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    margin-top: 40px;
+}
+@keyframes anim {
+0% {transform:translate(660px)}
+50%{transform:translate(0px)}
+75%{transform:translate(-660%) }
+100%{transform:translate(0px)}
+}
 
 
 
