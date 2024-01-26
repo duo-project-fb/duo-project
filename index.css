@@ -7,6 +7,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    
 }
 body{
     
@@ -41,7 +42,129 @@ margin-left: 155px;
     margin-left: 236px;
     margin-top: -545px;
 }
-
-
-
-
+.spot{
+    width:14px ;
+    height: 14px;
+    background-color:white;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    animation-name: anim ;
+    animation-duration: 3000ms;
+    animation-delay: 1000ms;
+    animation-iteration-count: infinite;
+    margin-top: 74px;
+}
+.spot1{
+    width:14px ;
+    height: 14px;
+    background-color:white;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    animation-name: anim1 ;
+    animation-duration: 3500ms;
+    animation-delay: 1500ms;
+    animation-iteration-count: infinite;
+    margin-top: 150px;
+}
+.spot2{
+    width:14px ;
+    height: 14px;
+    background-color:white;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    animation-name: anim2 ;
+    animation-duration: 4000ms;
+    animation-delay: 2000ms;
+    animation-iteration-count: infinite;
+    margin-top: 226px;
+}
+.spot3{
+    width:14px ;
+    height: 14px;
+    background-color:white;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    animation-name: anim3 ;
+    animation-duration: 4500ms;
+    animation-delay: 2500ms;
+    animation-iteration-count: infinite;
+    margin-top: 302px;
+}
+.spot4{
+    width:14px ;
+    height: 14px;
+    background-color:white;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    animation-name: anim4 ;
+    animation-duration: 5000ms;
+    animation-delay: 3000ms;
+    animation-iteration-count: infinite;
+    margin-top: 378px;
+}
+.spot5{
+    width:14px ;
+    height: 14px;
+    background-color:white;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    animation-name: anim5;
+    animation-duration: 4500ms;
+    animation-delay: 3500ms;
+    animation-iteration-count: infinite;
+    margin-top: 454px;
+}
+.spot6{
+    width:14px ;
+    height: 14px;
+    background-color:white;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    animation-name: anim6 ;
+    animation-duration: 5000ms;
+    animation-delay: 4000ms;
+    animation-iteration-count: infinite;
+    margin-top: 530px;
+}
+@keyframes anim {
+0% { left:0px; top:0px;}
+50%{ left:680px; top:0px;}
+100%{left:0px; top:0px;}
+}
+@keyframes anim1 {
+    0% { left:0px; top:0px;}
+    50%{ left:680px; top:0px;}
+    100%{left:0px; top:0px;}
+    }
+    @keyframes anim2 {
+        0% { left:0px; top:0px;}
+        50%{ left:680px; top:0px;}
+        100%{left:0px; top:0px;}
+        }
+        @keyframes anim3 {
+            0% { left:0px; top:0px;}
+            50%{ left:680px; top:0px;}
+            100%{left:0px; top:0px;}
+            }
+            @keyframes anim4 {
+                0% { left:0px; top:0px;}
+                50%{ left:680px; top:0px;}
+                100%{left:0px; top:0px;}
+                }
+                @keyframes anim5 {
+                    0% { left:0px; top:0px;}
+                    50%{ left:680px; top:0px;}
+                    100%{left:0px; top:0px;}
+                    }
+                    @keyframes anim6 {
+                        0% { left:0px; top:0px;}
+                        50%{ left:680px; top:0px;}
+                        100%{left:0px; top:0px;}
+                        }
