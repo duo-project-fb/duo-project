@@ -34,19 +34,52 @@ $('#left').click(function() {
 }
  });
 });
-// var arr=["⚪",
-//   "⚪",
-//   "⚪",
-//   "⚪",
-//   "⚪",
-//   "⚪",
-//   "⚪",
-//   "⚪","⚪","⚪","⚪"]
-//   var fedi=document.getElementById("space")
-// for(var i=0;i<arr.length;i++){
-//   var obstacle=document.createElement("h1")
-//   obstacle.textContent=arr[i]
-//   singleItem
-// }
+$(document).ready(function() {
+  
+  var rocket = $('.rocket');
+  var spots = $('.spot, .spot1, .spot2, .spot3, .spot4, .spot5, .spot6');
+
+  
+  var rocketStartPosition = {
+      left: rocket.css('left'),
+      bottom: rocket.css('bottom')
+  };
+
+
+  setInterval(function() {
+      checkCollisions();
+  }, 100); 
+
+  function checkCollisions() {
+      var rocketPosition = rocket.position();
+
+      
+      spots.each(function() {
+          var spotPosition = $(this).position();
+          
+          
+          if (
+              rocketPosition.left < spotPosition.left + $(this).width() &&
+              rocketPosition.left + rocket.width() > spotPosition.left &&
+              rocketPosition.top < spotPosition.top + $(this).height() &&
+              rocketPosition.top + rocket.height() > spotPosition.top
+          ) {
+              
+              resetRocketPosition();
+          }
+      });
+  }
+
+  
+  function resetRocketPosition() {
+      rocket.css({
+          'left': rocketStartPosition.left,
+          'bottom': rocketStartPosition.bottom
+      });
+  }
+
+  
+});
+
 
   
