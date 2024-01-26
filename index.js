@@ -1,5 +1,6 @@
 $(document).ready(function() {
   var rocket = $('.rocket');
+ 
   $('#fire').click(function() {
       var Bottom = parseInt(rocket.css('bottom'));
       console.log(Bottom);
@@ -9,7 +10,9 @@ $(document).ready(function() {
       }else{
         rocket.css('bottom', (Bottom + 10) + 'px');
       }
+     
     });
+   
   $('#break').click(function() {
       var Bottom = parseInt(rocket.css('bottom'));
       rocket.css('bottom', (Bottom - 10) + 'px');
@@ -33,53 +36,36 @@ $('#left').click(function() {
   rocket.css('right', (Bottom + 10) + 'px');
 }
  });
+ resetRocketPosition()
+ console.log(spots);
 });
-$(document).ready(function() {
+var rocketStartPosition = {
+  left: rocket.css('left'),
+  bottom: rocket.css('bottom')
+};
   
-  var rocket = $('.rocket');
-  var spots = $('.spot, .spot1, .spot2, .spot3, .spot4, .spot5, .spot6');
 
-  
-  var rocketStartPosition = {
-      left: rocket.css('left'),
-      bottom: rocket.css('bottom')
-  };
+var Bottom = parseInt(rocket.css('bottom'));
+  var spots = parseInt(spot6.css('spot6'))
 
+  setInterval(function () {
+      crushCheck();
+  }, 100);
 
-  setInterval(function() {
-      checkCollisions();
-  }, 100); 
-
-  function checkCollisions() {
-      var rocketPosition = rocket.position();
-
-      
-      spots.each(function() {
-          var spotPosition = $(this).position();
-          
-          
-          if (
-              rocketPosition.left < spotPosition.left + $(this).width() &&
-              rocketPosition.left + rocket.width() > spotPosition.left &&
-              rocketPosition.top < spotPosition.top + $(this).height() &&
-              rocketPosition.top + rocket.height() > spotPosition.top
-          ) {
-              
-              resetRocketPosition();
-          }
-      });
-  }
-
-  
   function resetRocketPosition() {
-      rocket.css({
-          'left': rocketStartPosition.left,
-          'bottom': rocketStartPosition.bottom
-      });
-  }
+    var rocketPosition =Bottom
+ 
+          spots.forEach(function () {
+              var spotPosition = spots.position();
+    
+              if (rocketPosition ===spotPosition ) 
+              {    Bottom = 0
+                console.log('hh')}
+          });
+   
+}
 
-  
-});
 
 
-  
+
+

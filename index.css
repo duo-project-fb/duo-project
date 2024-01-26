@@ -50,8 +50,8 @@ margin-left: 155px;
     border-radius: 50%;
     left: 0;
     animation-name: anim ;
-    animation-duration: 3,5;
-    animation-delay: 1s;
+    animation-duration: 3000ms;
+    animation-delay: 1000ms;
     animation-iteration-count: infinite;
     margin-top: 74px;
 }
@@ -63,8 +63,8 @@ margin-left: 155px;
     border-radius: 50%;
     left: 0;
     animation-name: anim1 ;
-    animation-duration: 3,5s;
-    animation-delay: 1,5s;
+    animation-duration: 3500ms;
+    animation-delay: 1500ms;
     animation-iteration-count: infinite;
     margin-top: 150px;
 }
@@ -76,8 +76,8 @@ margin-left: 155px;
     border-radius: 50%;
     left: 0;
     animation-name: anim2 ;
-    animation-duration: 3,5s;
-    animation-delay: 2s;
+    animation-duration: 4000ms;
+    animation-delay: 2000ms;
     animation-iteration-count: infinite;
     margin-top: 226px;
 }
@@ -89,8 +89,8 @@ margin-left: 155px;
     border-radius: 50%;
     left: 0;
     animation-name: anim3 ;
-    animation-duration: 3,5s;
-    animation-delay: 2,5s;
+    animation-duration: 4500ms;
+    animation-delay: 2500ms;
     animation-iteration-count: infinite;
     margin-top: 302px;
 }
@@ -102,8 +102,8 @@ margin-left: 155px;
     border-radius: 50%;
     left: 0;
     animation-name: anim4 ;
-    animation-duration: 3,5s;
-    animation-delay: 3s;
+    animation-duration: 5000ms;
+    animation-delay: 3000ms;
     animation-iteration-count: infinite;
     margin-top: 378px;
 }
@@ -115,8 +115,8 @@ margin-left: 155px;
     border-radius: 50%;
     left: 0;
     animation-name: anim5;
-    animation-duration: 3,5s;
-    animation-delay: 3,5s;
+    animation-duration: 4500ms;
+    animation-delay: 3500ms;
     animation-iteration-count: infinite;
     margin-top: 454px;
 }
@@ -128,8 +128,8 @@ margin-left: 155px;
     border-radius: 50%;
     left: 0;
     animation-name: anim6 ;
-    animation-duration: 3,5s;
-    animation-delay: 4s;
+    animation-duration: 5000ms;
+    animation-delay: 4000ms;
     animation-iteration-count: infinite;
     margin-top: 530px;
 }
